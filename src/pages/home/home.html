@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input style="background-color: yellow" type="text" [(ngModel)]="encodText" ></ion-input>
+  <button (click)="encode()">text</button>
+
+ <button ion-button block (click)="scann()">Click For Scann</button>
+ <div *ngIf="scannedData.text" >
+  <br>
+  <span>{{scannedData.text}}</span>
+ </div>
+ <button (click)="showBanner()" >Klik</button>
+</ion-content>
